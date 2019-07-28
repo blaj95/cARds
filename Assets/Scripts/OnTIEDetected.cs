@@ -16,6 +16,7 @@ public class OnTIEDetected : MonoBehaviour, ITrackableEventHandler
 
     public GameObject tiePrefab;
 
+    public GameObject text;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,18 +31,18 @@ public class OnTIEDetected : MonoBehaviour, ITrackableEventHandler
     {
         Debug.Log(stormTrooperCard.transform.position);
         if (newStatus == TrackableBehaviour.Status.DETECTED || newStatus == TrackableBehaviour.Status.TRACKED)
-        {
+        {   
             march.Play();
             //roar.Play();
             anim.SetBool("Fly", true);
             Debug.Log("bleg");
             flyingTIE = Instantiate(tiePrefab, Vector3.zero, Quaternion.identity) as GameObject;
+            text.SetActive(true);
         }
 
         if (newStatus == TrackableBehaviour.Status.NO_POSE)
         {
             anim.SetBool("Fly", false);
-            Debug.Log("MERh");
             Destroy(flyingTIE);
         }
     }

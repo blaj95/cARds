@@ -25,8 +25,8 @@ public class CircurlarMotion : MonoBehaviour
 
         float x = Mathf.Cos(timeCounter);
         float z = Mathf.Sin(timeCounter);
-        transform.localPosition = new Vector3(x,.4f,z);
-        
-        transform.Rotate(-transform.up,.96f);
+        Vector3 pos = new Vector3(x,.4f,z);
+        transform.localPosition = pos;
+        transform.rotation = Quaternion.Slerp(transform.rotation,Quaternion.LookRotation(pos),.15f);
     }
 }
