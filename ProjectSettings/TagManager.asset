@@ -7,6 +7,10 @@ TagManager:
   - Destroy
   - TIE
   - TIE2
+  - FxTemporaire
+  - Trooper
+  - Start
+  - TIEFighter
   layers:
   - Default
   - TransparentFX
@@ -21,8 +25,8 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
+  - Laser
+  - Trooper
   - 
   - 
   - 
