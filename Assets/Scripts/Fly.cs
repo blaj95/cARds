@@ -20,6 +20,6 @@ public class Fly : MonoBehaviour
     public void GetRekd()
     {
         FindObjectOfType<GameManager>().score += 1;
-        Destroy(gameObject,.2f);
+        Destroy(gameObject,.1f);
     }
 }

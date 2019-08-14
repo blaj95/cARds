@@ -24,8 +24,8 @@ public class ScrollingText : MonoBehaviour
         yield return new WaitForSeconds(11);
         if(!winningText)
             manager.EnableSpawns();
-        //if(winningText)
-            //restart.SetActive(true);
+        if(winningText)
+            restart.SetActive(true);
         Destroy(gameObject);
     }
 

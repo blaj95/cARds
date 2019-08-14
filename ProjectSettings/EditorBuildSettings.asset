@@ -5,12 +5,6 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/StormTrooper.unity
-    guid: 0de6207071ee78543ac0de4653c631f1
-  - enabled: 0
-    path: Assets/Scenes/StormTrooperV2.unity
-    guid: 121795966c271704e906fa028d429543
   - enabled: 1
     path: Assets/Scenes/DemoScene.unity
     guid: 972f5732e8d838f45a3c5fe7ea9a45b9

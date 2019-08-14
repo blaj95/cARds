@@ -60,6 +60,7 @@ public class TransformLaser : MonoBehaviour
             if(!other.gameObject.GetComponent<Fly>().dead == true)
                 other.gameObject.GetComponent<Fly>().GetRekd();
             other.gameObject.GetComponent<Fly>().dead = true;
+            Destroy(gameObject);
         }
     }
 }

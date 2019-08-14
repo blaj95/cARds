@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -26,7 +27,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        Application.targetFrameRate = 30;
     }
 
     // Update is called once per frame
@@ -72,5 +73,10 @@ public class GameManager : MonoBehaviour
         leftTIEspawn.SetActive(true);
         scoreCanvas.SetActive(true);
         scoring = true;
+    }
+
+    public void Restart()
+    {
+        SceneManager.LoadScene(0);
     }
 }
